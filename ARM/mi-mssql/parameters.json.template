@@ -1,0 +1,66 @@
+{
+    "${schema}": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "administratorLogin": {
+            "value": "${mssql_user}"
+        },
+        "administratorLoginPassword": {
+            "value": "${mssql_pass}"
+        },
+        "location": {
+            "value": "${location}"
+        },
+        "managedInstanceName": {
+            "value": "${mssql_name}"
+        },
+        "deployInExistingSubnet": {
+            "value": false
+        },
+        "skuName": {
+            "value": "GP_Gen5"
+        },
+        "skuEdition": {
+            "value": "GeneralPurpose"
+        },
+        "storageSizeInGB": {
+            "value": 32
+        },
+        "vCores": {
+            "value": 4
+        },
+        "licenseType": {
+            "value": "LicenseIncluded"
+        },
+        "hardwareFamily": {
+            "value": "Gen5"
+        },
+        "dnsZonePartner": {
+            "value": ""
+        },
+        "collation": {
+            "value": "SQL_Latin1_General_CP1_CI_AS"
+        },
+        "proxyOverride": {
+            "value": "Proxy"
+        },
+        "minimalTlsVersion": {
+            "value": "1.2"
+        },
+        "publicDataEndpointEnabled": {
+            "value": false
+        },
+        "timezoneId": {
+            "value": "UTC"
+        },
+        "nsgForPublicEndpoint": {
+            "value": "allowFromAzureCloudTo3342NSG"
+        },
+        "managedInstanceTags": {
+            "value": {}
+        },
+        "storageAccountType": {
+            "value": "LRS"
+        }
+    }
+}
