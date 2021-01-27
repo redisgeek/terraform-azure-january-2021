@@ -18,6 +18,14 @@ variable "acre_template_path" {
   default = "./ARM/acre/e10.json.template"
 }
 
+variable "client_id" {
+  description = "Service Principal to use (az ad sp create-for-rbac ...)"
+}
+
+variable "client_secret" {
+  description = "Client Secret for Service Principal"
+}
+
 variable "default_name" {
   description = "Default name to use for resources"
 }
