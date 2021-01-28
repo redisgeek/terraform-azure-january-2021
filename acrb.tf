@@ -1,5 +1,5 @@
 resource "azurerm_redis_cache" "basic" {
-  name                = var.acre_name
+  name                = var.acrb_name
   location            = var.location
   resource_group_name = var.acre_resource_group
   capacity            = 4

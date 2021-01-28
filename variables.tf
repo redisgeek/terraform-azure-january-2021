@@ -1,3 +1,8 @@
+variable "acrb_name" {
+  description = "The name of the deployment"
+  type = string
+}
+
 variable "acre_name" {
   description = "The name of the deployment"
   type = string
