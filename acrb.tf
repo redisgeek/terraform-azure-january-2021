@@ -2,7 +2,7 @@ resource "azurerm_redis_cache" "basic" {
   name                = var.acre_name
   location            = var.location
   resource_group_name = var.acre_resource_group
-  capacity            = 5
+  capacity            = 4
   family              = "C"
   sku_name            = "Basic"
   enable_non_ssl_port = false
