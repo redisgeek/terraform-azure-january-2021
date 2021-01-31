@@ -3,9 +3,21 @@ variable "acrb_name" {
   type = string
 }
 
+variable "acrb_count" {
+  description = "Number of instances to stand up"
+  type = number
+  default = 0
+}
+
 variable "acre_name" {
   description = "The name of the deployment"
   type = string
+}
+
+variable "acre_count" {
+  description = "Number of instances to stand up"
+  type = number
+  default = 1
 }
 
 variable "acre_resource_group" {
